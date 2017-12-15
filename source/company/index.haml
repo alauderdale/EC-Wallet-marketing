@@ -1,0 +1,58 @@
+%section.inverse-section.home-hero.rellax{:style=>"background-image:url(images/company-hero-bg.png);", "data-rellax-speed"=>"-4"}
+	.container
+		.row
+			.col-lg-12.text-center.rellax{"data-rellax-speed"=>"4"}
+				%h1
+					About Everleads
+				.row
+					.col-sm-2
+					.col-sm-8
+						%p.lead.no-margin-bottom
+							Everleads is a company that is lorem ipsum Integer interdum nunc ex, sed aliquet turpis cursus vitae. Morbi vestibulum nec erat sit amet ultricies.
+					.col-sm-2
+%section{:style=>"background:white; position:relative;"}
+	.container
+		.row
+			.col-sm-5.col-sm-push-7
+				.visible-xs
+					%img.max-width{:src=>"../images/company-grid-mobile.png", :width=>"291", "data-rellax-speed"=>"-.3"}
+				.company-images.hidden-xs
+					.inner
+						//pink
+						%img.img-two.rellax{:src=>"../images/about-image-two.png", :width=>"291", "data-rellax-speed"=>"-.3"}
+						//b;ue
+						%img.img-one.rellax{:src=>"../images/about-image-one.png", :width=>"205", "data-rellax-speed"=>"-.4"}
+						//brown
+						%img.img-three.rellax{:src=>"../images/about-image-three.png", :width=>"184", "data-rellax-speed"=>"-.5"}
+			.col-sm-7.col-sm-pull-5
+				.padded.company-text
+					%h3
+						We believe
+					%p
+						Donec nulla lorem, auctor at neque sed, feugiat gravida sapien. Donec quam est, interdum eleifend rhoncus quis, porttitor varius tortor. Nam sed tempor.Donec nulla lorem, auctor at neque sed, feugiat gravida sapien. Donec quam es.
+				.row
+					.col-sm-6
+						.padding-left.margin-bottom
+							.quarter-margin-bottom
+								%img.float-left{:src=>"../images/company-headquarters.png", :width=>"30", :style=>"position:relative; top:-3px; right:10px;"}
+								%h6.text-uppercase.primary-text-color.bold-font-name.no-margin-bottom
+									HEADQUARTERS
+							%p{:style=>"margin-left:30px;"}
+								%span.bold-font-name.text-color
+									1942 Broadway Suite 314
+								%br
+								Boulder, CO 890302
+					.col-sm-6
+						.padding-left.margin-bottom
+							.quarter-margin-bottom
+								%img.float-left{:src=>"../images/company-email.png", :width=>"30", :style=>"position:relative; top:-3px; right:10px;"}
+								%h6.text-uppercase.primary-text-color.bold-font-name.no-margin-bottom
+									EMAIL OR CALL
+							%p{:style=>"margin-left:30px;"}
+								%span.bold-font-name.text-color
+									info@everleads.com
+								%br
+								999.999.9999
+
+=partial"shared/promo"
+

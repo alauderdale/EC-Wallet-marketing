@@ -1,0 +1,21 @@
+
+//sections
+section{
+  padding:$baseline*2 0;
+  &.page-header-section{
+    background-size:cover;
+    background-position:center center;
+    padding:$baseline*4 0;
+    h1{
+      text-shadow:0 1px 13px rgba(0,0,0,.3);
+    }
+  }
+  &.inverse-section{
+  	@extend %white_text;
+  }
+  &.bg-cover{
+    background:cenrer no-repeat 100%;
+    background-size:cover;
+    background-position:center center;
+  }
+}

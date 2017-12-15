@@ -1,0 +1,36 @@
+;;;
+	"title": "Styles"
+;;;
+
+%section
+	.container
+		.col-lg-2
+		.col-lg-8
+			%h1
+				Heading 1
+			%h2
+				Heading 2
+			%h3
+				Heading 3
+			%h4
+				Heading 4
+			%h5
+				Heading 5
+			%h6
+				Heading 6
+			%p
+				= lorem.sentences 5
+			%p
+				%small
+					= lorem.sentences 5
+			%p
+				%a{:href=>"#"}
+					Linked
+			%p
+				%a.btn.btn-primary.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+				%a.btn.btn-default.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+				%a.btn.btn-info.btn-lg.fancybox{:href=>"http://images6.alphacoders.com/316/316963.jpg"}
+					Click Me
+		.col-lg-2

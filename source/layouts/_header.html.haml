@@ -1,0 +1,44 @@
+%nav.navbar.navbar-default.navbar-fixed-top.global-nav
+	.container.half-padding-bottom
+		.navbar-header
+			%a.navbar-brand{:href=>"/"}
+				%img.hidden-xs{:src=>"../images/logo.png", :width=>"146"}
+				%img.visible-xs{:src=>"../images/mobile-logo.png"}
+			.visible-xs
+				.pull-right
+					%button.tcon.tcon-menu--xcross.menu-button{"aria-label" => "toggle menu", :type => "button", "aria-expanded" => "false", "data-target" => "#collapse-menu", "data-toggle" => "collapse"}
+						%span.tcon-menu__lines{"aria-hidden" => "true"}
+						%span.tcon-visuallyhidden
+							toggle menu
+		.hidden-xs
+			.desktop-nav
+				.navbar-right
+					%ul.nav.navbar-nav
+						%li
+							%a{:href=>"/features"}
+								Features
+						%li
+							%a{:href=>"/company"}
+								Company
+						%li
+							%a{:href=>"/#"}
+								Login
+						%li
+							%a.btn.btn-primary.btn-header{:href => "/contact"}
+								Start Now
+
+	.visible-xs
+		#collapse-menu.collapse.navbar-collapse.mobile-nav
+			%ul.nav.navbar-nav
+				%li
+					%a{:href=>"/features"}
+						Features
+				%li
+					%a{:href=>"/company"}
+						Company
+				%li
+					%a{:href=>"/#"}
+						Login
+				%li
+					%a.link-color{:href => "/contact"}
+						Start Now

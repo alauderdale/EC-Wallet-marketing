@@ -1,0 +1,87 @@
+:css
+	body{
+		padding-top:0!important;
+	}
+	.navbar-default{
+		display:none;
+	}
+	footer{
+		display:none;
+	}
+
+.feature-panel.hidden-sm.hidden-xs
+	%a{:href=>"/"}
+		%img.contact-logo{:src=>"../images/contact-logo.png", :width=>"176"}
+	%h5.bold-font-name
+		IT’S AN OUTSTANDING PRODUCT. REALLY, IT IS!
+	.point
+		%img.float-left{:src=>"../images/home-custom-login.png", :width=>"32"}
+		%p.bold-font-name.no-margin-bottom
+			Custom login
+		%p.margin-bottom
+			%small
+				Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+	.point
+		%img.float-left{:src=>"../images/home-247-access.png", :width=>"32"}
+		%p.bold-font-name.no-margin-bottom
+			24 / 7 access
+		%p.margin-bottom
+			%small
+				Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+	.point
+		%img.float-left{:src=>"../images/home-real-time-data.png", :width=>"32"}
+		%p.bold-font-name.no-margin-bottom
+			Real time data
+		%p.margin-bottom
+			%small
+				Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+	.contact-quote
+		%p.quote-text
+			"Everleads helped me do things I could have not done without them. It was easy to get started and  I’ve made tons of money since I’ve started using"
+		%cite.cite
+			John Importantguy, CEO of BIG DATA GROUP, LLC 
+.main-panel
+	.panel-inner
+		%section.contact-section.hero-header-lg{:style=>"background-image:url(../images/contact_bg.png);"}
+			%a{:href=>"/"}
+				%img.visible-xs.visible-sm.margin-auto.contact-logo-mobile{:src=>"../images/mobile-logo.png", :width=>"170"}
+			.container-fluid
+				.row
+					.col-md-2
+					.col-md-8
+						%h2.text-center
+							We can’t wait to help you!
+						%p.text-center.margin-bottom
+							Fill out the form below and we’ll respond within 24hrs
+						.padding-left.padding-right
+							%form
+								.row
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Name"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Company"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Email"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Phone"}
+									.col-md-12
+										.form-group
+											%textarea.form-control.input-lg{:rows=>"3" , :placeholder=>"Tell us more. What are your needs?"}
+									.col-md-12.half-margin-top
+										.text-center
+											%button.btn-primary.btn.btn-lg.btn-strech{:type=>"submit"}
+												Send message
+						.text-center.double-margin-top
+							%h6.bold-font-name
+								GENERAL COMMUNICATION
+							%p
+								For general queries, including lorem ipsum, please email 
+								%br
+								%a{:href=>"#"}
+									info@everleads.com
+					.col-md-2
+

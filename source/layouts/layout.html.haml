@@ -1,0 +1,14 @@
+<!doctype html>
+%html
+  %head
+    = partial "shared/scripts"
+    %body{:class => page_classes}
+      = partial "layouts/header"
+      /end menu
+      .main
+        = yield
+      /end main content
+      = partial "layouts/footer"
+      = javascript_include_tag"lib/menu_button.js"
+      :javascript
+        transformicons.add('.tcon')

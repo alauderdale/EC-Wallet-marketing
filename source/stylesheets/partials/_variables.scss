@@ -1,0 +1,60 @@
+// color vars
+
+$primary-color: #00BDFF;
+$secondary-color: #BBE900;
+$tertiary-color: #2f7bbd;
+
+// greys
+$light-gray-color: #FBFCFC;
+$medium-gray-color: #eeeeee;
+
+//
+$navy-color: #172B3B;
+$light-blue-color: #E6FAFF;
+$pink-color: #FF0086;
+
+$gray-color: #dddddd;
+$green-color: #85C342;
+$black-color: #1f2229;
+$yellow-color: #ffd266;
+
+$success-color: $green-color;
+$warning-color: #f0ad4e;
+
+$header-text-color: #737E88;
+$text-color: #36424C;
+$light-text-color: #bbbbbb;
+$body-text-color: #708EA7;
+$dark-text-color: $text-color;
+
+
+$link-color: $primary-color;
+$link-hover-color:shade($secondary-color, 50%);
+$top-nav-link-color:tint($text-color, 30%);
+
+$background-color: #FCFCFC;
+
+// units
+
+$baseline: 28px;
+$base-border-radius:3px;
+
+
+// font vars
+
+$regular-font-name: proxima_nova_rgregular, "Helvetica", serif;
+$bold-font-name: proxima_nova_rgbold, "Helvetica", serif;
+$light-font-name: proxima_novalight, "Helvetica", serif;
+$headline-font-name:$regular-font-name;
+$flourish-font-name:$regular-font-name;
+$social-font-name:"socialicoregular", "Helvetica", serif;
+$social-font-name-two:"socialico_plusregular", "Helvetica", serif;
+
+
+//transitions
+
+$base-transition-duration:.2s;
+
+//text columns
+
+$text-column-gutter-width: $baseline;

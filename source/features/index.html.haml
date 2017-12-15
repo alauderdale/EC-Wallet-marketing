@@ -1,0 +1,69 @@
+%section.inverse-section.home-hero.rellax.no-padding-bottom{:style=>"background-image:url(images/features-hero-bg.png);", "data-rellax-speed"=>"-4"}
+	.container
+		.row
+			.col-lg-12.text-center.rellax{"data-rellax-speed"=>"4"}
+				%h1
+					Features that work for you
+				.row
+					.col-sm-2
+					.col-sm-8
+						%p.double-margin-bottom.lead
+							Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+					.col-sm-2
+
+				%img.max-width{:src=>"../images/features-hero.png", :width=>"805", :style=>"position:relative; bottom:-15px;"}
+%section.features{:style=>"background:white; position:relative;"}
+	.container
+		.row.feature
+			.col-md-6.features-image
+				.inner
+					%img.img-responsive{:src=>"../images/features-feature-one.png", :width=>"504"}
+			.col-md-6.features-text
+				.inner
+					%h3
+						Easy-to-use platform
+					%p
+						= lorem.sentences 3
+		.row.feature
+			.col-md-6.features-image
+				.inner
+					%img.img-responsive{:src=>"../images/features-feature-two.png", :width=>"504"}
+			.col-md-6.features-text
+				.inner
+					%h3
+						24 / 7 access
+					%p
+						= lorem.sentences 3
+		.row.feature
+			.col-md-6.features-image
+				.inner
+					%img.img-responsive{:src=>"../images/features-feature-three.png", :width=>"504"}
+			.col-md-6.features-text
+				.inner
+					%h3
+						Real time data
+					%p
+						= lorem.sentences 3
+		.row.feature
+			.col-md-6.features-image
+				.inner
+					%img.img-responsive{:src=>"../images/features-feature-four.png", :width=>"504"}
+			.col-md-6.features-text
+				.inner
+					%h3
+						Unlimited downloads
+					%p
+						= lorem.sentences 3
+		.row.feature
+			.col-md-6.features-image
+				.inner
+					%img.img-responsive{:src=>"../images/features-feature-five.png", :width=>"504"}
+			.col-md-6.features-text
+				.inner
+					%h3
+						Custom reports
+					%p
+						= lorem.sentences 3
+
+=partial"shared/promo"
+
