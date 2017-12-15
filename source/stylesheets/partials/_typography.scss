@@ -173,9 +173,11 @@ h1 {
   line-height: 50px;
 }
 h2 {
-  font-size: 38px;
+  font-size: 32px;
   letter-spacing: 0;
-  line-height: 29px;
+  font-weight:700;
+  color:$header-text-color;
+  line-height: 35px;
 }
 h3 {
   font-size: 34px;
@@ -314,6 +316,31 @@ p{
 
 //mobile
 
+  @include breakpoint(md) {
+
+    p{
+      font-size:20px;
+      line-height:30px;
+    }
+
+  }
+
+
   @include breakpoint(sm) {
+
+    h1, h2, p{
+      text-align:center;
+      text-align:center;
+    }
+
+    h1{
+      
+      font-size:40px;
+    }
+
+    p{
+      font-size:18px;
+      line-height:30px;
+    }
 
   }

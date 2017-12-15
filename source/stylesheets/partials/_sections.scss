@@ -24,4 +24,7 @@ section{
   &.bordered-section{
     border-bottom:1px solid #ECF0F5;
   }
+  @include breakpoint(sm) {
+    padding:$baseline 0;
+  }
 }

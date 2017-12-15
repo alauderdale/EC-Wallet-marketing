@@ -20,8 +20,23 @@
 
 
   @include breakpoint(sm) {
+    .no-margin-sm{
+      &.double-margin-top{
+        margin-top:0!important;
+      }
+      margin:0!important;
+    }
     .text-center-sm{
       text-align: center;
+    }
+    .center-sm{
+      margin:0 auto;
+      text-align:center;
+      display:flex;
+      float:none!important;
+    }
+    .img-spacer-sm{
+      margin-top:$baseline*2;
     }
   }
 
