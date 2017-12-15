@@ -21,9 +21,10 @@
 
 
 .btn {
-	border-radius: 100px;
+	border-radius: 2px;
 	font-family:$bold-font-name;
-	font-size: 16px;
+	font-weight:600;
+	font-size: 14px;
 	&.btn-primary {
 		background-color: $primary-color;
 		border-color: $primary-color;
@@ -45,12 +46,6 @@
 	}
 	&.btn-strech {
 		padding: 10px 50px 10px 50px !important;
-	}
-	&.btn-header {
-		padding: 8px 30px !important;
-		font-size: 16px;
-		position:relative;
-		top:-3px;
 	}
 }
 

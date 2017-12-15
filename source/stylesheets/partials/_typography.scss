@@ -1,33 +1,7 @@
 // typography baselines and @font face setups
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-@font-face {
-    font-family: 'proxima_novalight';
-    src: url('../font/proximanova-light-webfont.woff2') format('woff2'),
-         url('../font/proximanova-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('../font/proximanova-regular-webfont.woff2') format('woff2'),
-         url('../font/proximanova-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url('../font/proximanova-bold-webfont.woff2') format('woff2'),
-         url('../font/proximanova-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
 
@@ -117,10 +91,12 @@
 
 .bold-font-name{
     font-family:$bold-font-name!important;
+    font-weight:700;
 }
 
 .light-font-name{
   font-family: $light-font-name;
+  font-weight:100;
 }
 
 
@@ -190,8 +166,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 h1 {
-  font-size: 45px;
+  font-size: 44px;
   letter-spacing: 0;
+  font-weight:700;
+  color:$header-text-color;
+  line-height: 50px;
 }
 h2 {
   font-size: 38px;
@@ -206,6 +185,13 @@ h4 {
   font-size: 24px;
   letter-spacing: 0;
 }
+h5 {
+  font-size: 19px;
+  letter-spacing:1.6px;
+  font-weight:900;
+  text-transform:uppercase;
+  color:#D0DCE7;
+  }
 h6 {
   font-size: 12px;
   letter-spacing: 0.86px;
@@ -214,7 +200,7 @@ h6 {
 
 p{
   color:$body-text-color;
-  line-height:2.8rem;
+  line-height:3.8rem;
   margin-bottom:$baseline/2;
   &.lead{
     line-height:3rem;

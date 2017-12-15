@@ -1,15 +1,7 @@
-section {
-  &.home-footer-bg {
-    background-image: url("../images/home-footer-bg.png");
-    max-width: 100%;
-    height: auto;
- }
-}
+
 
 footer {
 	&.primary-footer {
-		background-color: $navy-color;
-		@extend %white_text;
 		section {
 			padding:30px 0;
 		}
@@ -25,7 +17,7 @@ footer {
 	      padding-left: 10px;
 				a {
 					@include transition-duration(.1s);
-					color: rgba(255, 255, 255, .8);
+					color: $primary-color;
 					border: none;
 					&:hover, &:focus{
 						color: white;
@@ -53,7 +45,7 @@ footer {
 	      font-size: 13px;
 	      line-height: 3.6em;
 	      a {
-	        color: $primary-color;
+	        color: $primary-color!important;
 	        padding-left: 10px;
 	        @include transition-duration(.2s);
 	        &:hover{

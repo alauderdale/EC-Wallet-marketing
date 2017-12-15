@@ -1,7 +1,7 @@
 // color vars
 
-$primary-color: #00BDFF;
-$secondary-color: #BBE900;
+$primary-color: #00CD90;
+$secondary-color: #003968;
 $tertiary-color: #2f7bbd;
 
 // greys
@@ -21,10 +21,10 @@ $yellow-color: #ffd266;
 $success-color: $green-color;
 $warning-color: #f0ad4e;
 
-$header-text-color: #737E88;
+$header-text-color: $secondary-color;
 $text-color: #36424C;
 $light-text-color: #bbbbbb;
-$body-text-color: #708EA7;
+$body-text-color: #5E6469;
 $dark-text-color: $text-color;
 
 
@@ -42,9 +42,9 @@ $base-border-radius:3px;
 
 // font vars
 
-$regular-font-name: proxima_nova_rgregular, "Helvetica", serif;
-$bold-font-name: proxima_nova_rgbold, "Helvetica", serif;
-$light-font-name: proxima_novalight, "Helvetica", serif;
+$regular-font-name: 'Open Sans', sans-serif;
+$bold-font-name: 'Open Sans', sans-serif;
+$light-font-name: 'Open Sans', sans-serif;
 $headline-font-name:$regular-font-name;
 $flourish-font-name:$regular-font-name;
 $social-font-name:"socialicoregular", "Helvetica", serif;

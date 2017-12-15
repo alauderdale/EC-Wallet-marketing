@@ -2,8 +2,8 @@
 	.container.half-padding-bottom
 		.navbar-header
 			%a.navbar-brand{:href=>"/"}
-				%img.hidden-xs{:src=>"../images/logo.png", :width=>"146"}
-				%img.visible-xs{:src=>"../images/mobile-logo.png"}
+				%img.hidden-xs{:src=>"../images/logo.png", :width=>"262"}
+				%img.visible-xs{:src=>"../images/mobile-logo.png", :style=>"padding-top:12px;"}
 			.visible-xs
 				.pull-right
 					%button.tcon.tcon-menu--xcross.menu-button{"aria-label" => "toggle menu", :type => "button", "aria-expanded" => "false", "data-target" => "#collapse-menu", "data-toggle" => "collapse"}
@@ -15,17 +15,14 @@
 				.navbar-right
 					%ul.nav.navbar-nav
 						%li
-							%a{:href=>"/features"}
-								Features
-						%li
 							%a{:href=>"/company"}
-								Company
+								Help
 						%li
 							%a{:href=>"/#"}
-								Login
+								Sign in
 						%li
 							%a.btn.btn-primary.btn-header{:href => "/contact"}
-								Start Now
+								Get wallet
 
 	.visible-xs
 		#collapse-menu.collapse.navbar-collapse.mobile-nav
