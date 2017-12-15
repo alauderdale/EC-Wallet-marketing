@@ -1,28 +1,70 @@
 $(document).ready(function(){
 
-    //rellax
-    var rellax = new Rellax('.rellax');
 
 
-	 //fancybox
-	$('.fancybox').fancybox({
-        padding: 0
+    window.sr = ScrollReveal({ 
+        reset: false,
+        distance: '0px',
+        scale: 1,
+        duration: 800
     });
-	
-	$('.fb-video').fancybox({
-        padding: 0,
-        helpers: {
-            media: {}
-        }
-   });
 
-	$('.tooltip-up').tooltip({html:true});
-
-	$( "#js-menu-button-open,#js-menu-button-close" ).click(function() {
-        $( ".main-nav-container" ).toggleClass( "fixed-nav" );
-        $( ".menu-drop" ).toggleClass( "menu-show" );
-        $( "html" ).toggleClass( "nav-open" );
+    ///hero
+    sr.reveal('.step-1', { 
+        delay: 400,
     });
+
+    sr.reveal('.step-2', { 
+        delay: 400,
+    });
+
+    sr.reveal('.step-3', {
+        easing: 'ease-in',
+        duration: 400, 
+        delay: 1200,
+        distance: '5px',
+        origin:'bottom'
+    });
+
+    sr.reveal('.step-4', { 
+        delay: 1600
+    });
+
+    sr.reveal('.step-5', { 
+        easing: 'ease-in',
+        duration: 400, 
+        delay: 1200,
+        distance: '5px',
+        origin:'top'
+    });
+
+    ///other sections
+    sr.reveal('.default-step-1', { 
+        delay: 200,
+        easing: 'ease-in-out',
+        origin:'bottom',
+        duration: 300,
+        distance: '8px',
+    });
+
+    sr.reveal('.default-step-2', { 
+        delay: 400,
+        easing: 'ease-in-out',
+        origin:'bottom',
+        duration: 300,
+        distance: '8px',
+    });
+
+
+
+
+	// $('.tooltip-up').tooltip({html:true});
+
+	// $( "#js-menu-button-open,#js-menu-button-close" ).click(function() {
+ //        $( ".main-nav-container" ).toggleClass( "fixed-nav" );
+ //        $( ".menu-drop" ).toggleClass( "menu-show" );
+ //        $( "html" ).toggleClass( "nav-open" );
+ //    });
 
 
     ///all the animations!
@@ -40,20 +82,20 @@ $(document).ready(function(){
     // });
 
 
-    $('.slideinRightonload').viewportChecker({
-        classToAdd: 'fadeInRight',
-        offset: 50
-    });
+    // $('.slideinRightonload').viewportChecker({
+    //     classToAdd: 'fadeInRight',
+    //     offset: 50
+    // });
 
-    $('.slideinLeftonload').viewportChecker({
-        classToAdd: 'fadeInLeft',
-        offset: 50
-    });
+    // $('.slideinLeftonload').viewportChecker({
+    //     classToAdd: 'fadeInLeft',
+    //     offset: 50
+    // });
 
 
-    $('.fadeInOnload').viewportChecker({
-        classToAdd: 'fadeIn'
-    });
+    // $('.fadeInOnload').viewportChecker({
+    //     classToAdd: 'fadeIn'
+    // });
 
     //main nav
     $(window).scroll(function() {    
