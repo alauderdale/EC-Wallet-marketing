@@ -45,6 +45,7 @@ $(document).ready(function(){
         origin:'bottom',
         duration: 300,
         distance: '8px',
+        viewOffset: { top: 73, right: 0, bottom: 0, left: 0 }
     });
 
     sr.reveal('.default-step-2', { 
@@ -53,6 +54,7 @@ $(document).ready(function(){
         origin:'bottom',
         duration: 300,
         distance: '8px',
+        viewOffset: { top: 73, right: 0, bottom: 0, left: 0 }
     });
 
 
