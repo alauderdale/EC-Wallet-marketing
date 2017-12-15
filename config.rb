@@ -37,9 +37,9 @@
 # Helpers
 ###
 
-def nav_active(page)
-  @page_id == page ? {:class => "Active"} : {}
-end
+# def nav_active(page)
+#   @page_id == page ? {:class => "Active"} : {}
+# end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
