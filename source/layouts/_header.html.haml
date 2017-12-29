@@ -21,8 +21,18 @@
 							%a{:href=>"#"}
 								Sign in
 						%li
-							%a.btn.btn-primary.btn-header{:href => "#"}
-								Get wallet
+							.btn-group
+								%a.btn.btn-primary.btn-header.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
+									Download the app
+								%ul.dropdown-menu.app-dd
+									%li.text-center
+										%a{:href=>"#"}
+											%img.max-width.margin-auto{:src=>"../images/app_store.png"}
+									%li.text-center
+										%a{:href=>"#"}
+											%img.max-width.margin-auto{:src=>"../images/google_play.png"}
+							
+
 
 	.visible-xs
 		#collapse-menu.collapse.navbar-collapse.mobile-nav
@@ -33,6 +43,9 @@
 				%li
 					%a{:href=>"#"}
 						Sign in
-				%li
-					%a.link-color{:href => "#"}
-						Get Wallet
+				%li.text-center
+					%a{:href=>"#"}
+						%img.max-width.margin-auto{:src=>"../images/app_store.png"}
+				%li.text-center
+					%a{:href=>"#"}
+						%img.max-width.margin-auto{:src=>"../images/google_play.png"}

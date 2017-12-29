@@ -12,6 +12,14 @@ section{
   }
   &.inverse-section{
   	@extend %white_text;
+    a{
+      color:white;
+      text-decoration:underline;
+    }
+  }
+  &.gradient-section{
+    // background:red;
+    @include linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%);
   }
   &.bg-cover{
     background:cenrer no-repeat 100%;
