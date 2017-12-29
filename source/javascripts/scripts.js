@@ -11,29 +11,40 @@ $(document).ready(function(){
 
     ///hero
     sr.reveal('.step-1', { 
-        delay: 400,
+        delay: 600,
+        distance: '5px',
+        origin:'bottom'
     });
 
+
     sr.reveal('.step-2', { 
-        delay: 400,
+        delay: 600,
+        distance: '5px',
+        origin:'bottom'
+    });
+
+    sr.reveal('.step-2-5', { 
+        delay: 1600,
+        distance: '5px',
+        origin:'bottom'
     });
 
     sr.reveal('.step-3', {
         easing: 'ease-in',
         duration: 400, 
-        delay: 1200,
+        delay: 2500,
         distance: '5px',
         origin:'bottom'
     });
 
     sr.reveal('.step-4', { 
-        delay: 1600
+        delay: 3000
     });
 
     sr.reveal('.step-5', { 
         easing: 'ease-in',
         duration: 400, 
-        delay: 1200,
+        delay: 2500,
         distance: '5px',
         origin:'top'
     });
