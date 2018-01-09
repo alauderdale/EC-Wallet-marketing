@@ -25,3 +25,11 @@
     display: inline-block;
     }
 }
+
+.secutiry-label{
+    font-size:21px;
+     @include breakpoint(lg) {
+        font-size:22px;
+        line-height:28px;
+     }
+}

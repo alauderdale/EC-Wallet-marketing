@@ -3,8 +3,14 @@
 	min-width:169px;
 	li{
 		a{
+			font-weight:600;
 			margin:0!important;
-			padding:8px 0!important;
+			padding:8px 0px 8px 20px!important;
+			&:hover{
+				background:transparent;
+				color:shade($header-text-color,50%)!important;
+			}
+
 		}
 	}
 }
