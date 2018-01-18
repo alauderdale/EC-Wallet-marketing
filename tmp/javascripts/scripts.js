@@ -1,28 +1,83 @@
 $(document).ready(function(){
 
-    //rellax
-    var rellax = new Rellax('.rellax');
 
 
-	 //fancybox
-	$('.fancybox').fancybox({
-        padding: 0
+    window.sr = ScrollReveal({ 
+        reset: false,
+        distance: '0px',
+        scale: 1,
+        duration: 800
     });
-	
-	$('.fb-video').fancybox({
-        padding: 0,
-        helpers: {
-            media: {}
-        }
-   });
 
-	$('.tooltip-up').tooltip({html:true});
-
-	$( "#js-menu-button-open,#js-menu-button-close" ).click(function() {
-        $( ".main-nav-container" ).toggleClass( "fixed-nav" );
-        $( ".menu-drop" ).toggleClass( "menu-show" );
-        $( "html" ).toggleClass( "nav-open" );
+    ///hero
+    sr.reveal('.step-1', { 
+        delay: 600,
+        distance: '5px',
+        origin:'bottom'
     });
+
+
+    sr.reveal('.step-2', { 
+        delay: 600,
+        distance: '5px',
+        origin:'bottom'
+    });
+
+    sr.reveal('.step-2-5', { 
+        delay: 1600,
+        distance: '5px',
+        origin:'bottom'
+    });
+
+    sr.reveal('.step-3', {
+        easing: 'ease-in',
+        duration: 400, 
+        delay: 2500,
+        distance: '5px',
+        origin:'bottom'
+    });
+
+    sr.reveal('.step-4', { 
+        delay: 3000
+    });
+
+    sr.reveal('.step-5', { 
+        easing: 'ease-in',
+        duration: 400, 
+        delay: 2500,
+        distance: '5px',
+        origin:'top'
+    });
+
+    ///other sections
+    sr.reveal('.default-step-1', { 
+        delay: 200,
+        easing: 'ease-in-out',
+        origin:'bottom',
+        duration: 300,
+        distance: '8px',
+        viewOffset: { top: 0, right: 0, bottom: 100, left: 0 }
+    });
+
+    sr.reveal('.default-step-2', { 
+        delay: 400,
+        easing: 'ease-in-out',
+        origin:'bottom',
+        duration: 300,
+        distance: '8px',
+        viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }
+    });
+
+
+
+
+	// $('.tooltip-up').tooltip({html:true});
+
+	// $( "#js-menu-button-open,#js-menu-button-close" ).click(function() {
+ //        $( ".main-nav-container" ).toggleClass( "fixed-nav" );
+ //        $( ".menu-drop" ).toggleClass( "menu-show" );
+ //        $( "html" ).toggleClass( "nav-open" );
+ //    });
 
 
     ///all the animations!
@@ -40,20 +95,20 @@ $(document).ready(function(){
     // });
 
 
-    $('.slideinRightonload').viewportChecker({
-        classToAdd: 'fadeInRight',
-        offset: 50
-    });
+    // $('.slideinRightonload').viewportChecker({
+    //     classToAdd: 'fadeInRight',
+    //     offset: 50
+    // });
 
-    $('.slideinLeftonload').viewportChecker({
-        classToAdd: 'fadeInLeft',
-        offset: 50
-    });
+    // $('.slideinLeftonload').viewportChecker({
+    //     classToAdd: 'fadeInLeft',
+    //     offset: 50
+    // });
 
 
-    $('.fadeInOnload').viewportChecker({
-        classToAdd: 'fadeIn'
-    });
+    // $('.fadeInOnload').viewportChecker({
+    //     classToAdd: 'fadeIn'
+    // });
 
     //main nav
     $(window).scroll(function() {    

@@ -1,0 +1,133 @@
+<style>
+  body{
+  	padding-top:0!important;
+  }
+  .navbar-default{
+  	display:none;
+  }
+  footer{
+  	display:none;
+  }
+</style>
+<div class='feature-panel hidden-sm hidden-xs'>
+<a href='/'>
+<img class='contact-logo' src='../images/contact-logo.png' width='176'>
+</a>
+<h5 class='bold-font-name'>
+IT’S AN OUTSTANDING PRODUCT. REALLY, IT IS!
+</h5>
+<div class='point'>
+<img class='float-left' src='../images/home-custom-login.png' width='32'>
+<p class='bold-font-name no-margin-bottom'>
+Custom login
+</p>
+<p class='margin-bottom'>
+<small>
+Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+</small>
+</p>
+</div>
+<div class='point'>
+<img class='float-left' src='../images/home-247-access.png' width='32'>
+<p class='bold-font-name no-margin-bottom'>
+24 / 7 access
+</p>
+<p class='margin-bottom'>
+<small>
+Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+</small>
+</p>
+</div>
+<div class='point'>
+<img class='float-left' src='../images/home-real-time-data.png' width='32'>
+<p class='bold-font-name no-margin-bottom'>
+Real time data
+</p>
+<p class='margin-bottom'>
+<small>
+Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
+</small>
+</p>
+</div>
+<div class='contact-quote'>
+<p class='quote-text'>
+"Everleads helped me do things I could have not done without them. It was easy to get started and  I’ve made tons of money since I’ve started using"
+</p>
+<cite class='cite'>
+John Importantguy, CEO of BIG DATA GROUP, LLC
+</cite>
+</div>
+</div>
+<div class='main-panel'>
+<div class='panel-inner'>
+<section class='contact-section hero-header-lg' style='background-image:url(../images/contact_bg.png);'>
+<a href='/'>
+<img class='visible-xs visible-sm margin-auto contact-logo-mobile' src='../images/mobile-logo.png' width='170'>
+</a>
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-2'></div>
+<div class='col-md-8'>
+<h2 class='text-center'>
+We can’t wait to help you!
+</h2>
+<p class='text-center margin-bottom'>
+Fill out the form below and we’ll respond within 24hrs
+</p>
+<div class='padding-left padding-right'>
+<form>
+<div class='row'>
+<div class='col-md-12'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Name' type='text'>
+</div>
+</div>
+<div class='col-md-12'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Company' type='text'>
+</div>
+</div>
+<div class='col-md-12'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Email' type='text'>
+</div>
+</div>
+<div class='col-md-12'>
+<div class='form-group'>
+<input class='form-control input-lg' placeholder='Phone' type='text'>
+</div>
+</div>
+<div class='col-md-12'>
+<div class='form-group'>
+<textarea class='form-control input-lg' placeholder='Tell us more. What are your needs?' rows='3'></textarea>
+</div>
+</div>
+<div class='col-md-12 half-margin-top'>
+<div class='text-center'>
+<button class='btn-primary btn btn-lg btn-strech' type='submit'>
+Send message
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class='text-center double-margin-top'>
+<h6 class='bold-font-name'>
+GENERAL COMMUNICATION
+</h6>
+<p>
+For general queries, including lorem ipsum, please email
+<br>
+<a href='#'>
+info@everleads.com
+</a>
+</p>
+</div>
+</div>
+<div class='col-md-2'></div>
+</div>
+</div>
+</section>
+</div>
+</div>

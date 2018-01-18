@@ -13,7 +13,6 @@
  *     });
  *
  */
-
 (function ($) {
 	//Shortcut for fancyBox object
 	var F = $.fancybox;

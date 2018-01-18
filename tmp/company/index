@@ -1,0 +1,110 @@
+<section class='inverse-section home-hero rellax' data-rellax-speed='-4' style='background-image:url(images/company-hero-bg.png);'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-12 text-center rellax' data-rellax-speed='4'>
+<h1>
+About Everleads
+</h1>
+<div class='row'>
+<div class='col-sm-2'></div>
+<div class='col-sm-8'>
+<p class='lead no-margin-bottom'>
+Everleads is a company that is lorem ipsum Integer interdum nunc ex, sed aliquet turpis cursus vitae. Morbi vestibulum nec erat sit amet ultricies.
+</p>
+</div>
+<div class='col-sm-2'></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style='background:white; position:relative;'>
+<div class='container'>
+<div class='row'>
+<div class='col-sm-5 col-sm-push-7'>
+<div class='visible-xs'>
+<img class='max-width' data-rellax-speed='-.3' src='../images/company-grid-mobile.png' width='291'>
+</div>
+<div class='company-images hidden-xs'>
+<div class='inner'>
+<!-- /pink -->
+<img class='img-two rellax' data-rellax-speed='-.3' src='../images/about-image-two.png' width='291'>
+<!-- /b;ue -->
+<img class='img-one rellax' data-rellax-speed='-.4' src='../images/about-image-one.png' width='205'>
+<!-- /brown -->
+<img class='img-three rellax' data-rellax-speed='-.5' src='../images/about-image-three.png' width='184'>
+</div>
+</div>
+</div>
+<div class='col-sm-7 col-sm-pull-5'>
+<div class='padded company-text'>
+<h3>
+We believe
+</h3>
+<p>
+Donec nulla lorem, auctor at neque sed, feugiat gravida sapien. Donec quam est, interdum eleifend rhoncus quis, porttitor varius tortor. Nam sed tempor.Donec nulla lorem, auctor at neque sed, feugiat gravida sapien. Donec quam es.
+</p>
+</div>
+<div class='row'>
+<div class='col-sm-6'>
+<div class='padding-left margin-bottom'>
+<div class='quarter-margin-bottom'>
+<img class='float-left' src='../images/company-headquarters.png' style='position:relative; top:-3px; right:10px;' width='30'>
+<h6 class='text-uppercase primary-text-color bold-font-name no-margin-bottom'>
+HEADQUARTERS
+</h6>
+</div>
+<p style='margin-left:30px;'>
+<span class='bold-font-name text-color'>
+1942 Broadway Suite 314
+</span>
+<br>
+Boulder, CO 890302
+</p>
+</div>
+</div>
+<div class='col-sm-6'>
+<div class='padding-left margin-bottom'>
+<div class='quarter-margin-bottom'>
+<img class='float-left' src='../images/company-email.png' style='position:relative; top:-3px; right:10px;' width='30'>
+<h6 class='text-uppercase primary-text-color bold-font-name no-margin-bottom'>
+EMAIL OR CALL
+</h6>
+</div>
+<p style='margin-left:30px;'>
+<span class='bold-font-name text-color'>
+info@everleads.com
+</span>
+<br>
+999.999.9999
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class='inverse-section bg-cover home-footer-bg'>
+<div class='container'>
+<div class='row text-center navy-layer'>
+<img src='../images/everlead-lightbulb.png' width='124'>
+</div>
+<div class='row'>
+<h6 class='text-uppercase bold-font-name text-center half-padding-top'>
+Ready To Get Started
+</h6>
+</div>
+<div class='row text-center'>
+<h3>
+You’re going to be amazing
+</h3>
+</div>
+<div class='row text-center margin-bottom'>
+<a class='btn btn-primary btn-shadow btn-strech margin-top' href='/contact'>
+Contact sales
+</a>
+</div>
+</div>
+</section>
+

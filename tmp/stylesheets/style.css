@@ -2,32 +2,41 @@
 @import url(lib/font-awesome.css);
 @import url(lib/bootstrap.css);
 @import url(lib/animate.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @media (max-width: 767px) {
-  /* line 23, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_responsive.scss */
+  .no-margin-sm {
+    margin: 0 !important; }
+    .no-margin-sm.double-margin-top {
+      margin-top: 0 !important; }
+
   .text-center-sm {
-    text-align: center; } }
+    text-align: center; }
+
+  .center-sm {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    float: none !important; }
+
+  .img-spacer-sm {
+    margin-top: 56px; } }
 @media (max-width: 767px) {
-  /* line 29, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_responsive.scss */
   .callout-text-sm {
     font-size: 67px !important; } }
-/* line 2, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_extends.scss */
-section.inverse-section h1, footer.primary-footer h1, .feature-panel h1, section.inverse-section h2, footer.primary-footer h2, .feature-panel h2, section.inverse-section h3, footer.primary-footer h3, .feature-panel h3, section.inverse-section h4, footer.primary-footer h4, .feature-panel h4, section.inverse-section h5, footer.primary-footer h5, .feature-panel h5, section.inverse-section h6, footer.primary-footer h6, .feature-panel h6, section.inverse-section p, footer.primary-footer p, .feature-panel p, section.inverse-section small, footer.primary-footer small, .feature-panel small, section.inverse-section li, footer.primary-footer li, .feature-panel li {
+section.inverse-section h1, section.inverse-section h2, section.inverse-section h3, section.inverse-section h4, section.inverse-section h5, section.inverse-section h6, section.inverse-section p, section.inverse-section small, section.inverse-section li {
   color: white !important; }
 
-/* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 * {
   margin: 0;
   padding: 0; }
 
-/* line 7, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 html {
   max-width: 100%;
   overflow-x: hidden; }
 
-/* line 12, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 body {
   font: 100%;
-  font-size: 16px;
+  font-size: 24px;
   color: black;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -39,15 +48,16 @@ body {
   -webkit-font-smoothing: antialiased;
   zoom: 1;
   font-style: normal !important;
-  font-family: proxima_nova_rgregular, "Helvetica", serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
   padding-top: 85px; }
   @media (max-width: 767px) {
-    /* line 12, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
     body {
       padding-top: 81px; } }
 
-/* line 39, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
+.flex {
+  display: flex; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -56,71 +66,44 @@ body {
   clear: both;
   height: 0; }
 
-/* line 47, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 * html .clearfix {
   zoom: 1; }
 
 /* IE6 */
-/* line 48, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 *:first-child + html .clearfix {
   zoom: 1; }
 
 /* IE7 */
-/* line 53, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .flex {
   display: flex; }
 
-/* line 57, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .eq {
   flex: 1; }
 
-/* line 63, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 img {
   height: auto; }
 
-/* line 73, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .base-line-height {
   line-height: 28px; }
 
-/* line 77, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .small-line-height {
   line-height: 18px; }
 
-/* line 81, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .full-width {
   width: 100%; }
 
-/* line 85, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .max-width {
   max-width: 100%; }
 
-/* line 89, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .display-block {
   display: block; }
 
-/* line 93, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 97, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_base.scss */
 .inline {
   display: inline; }
 
-@font-face {
-  font-family: 'proxima_novalight';
-  src: url("../font/proximanova-light-webfont.woff2") format("woff2"), url("../font/proximanova-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'proxima_nova_rgregular';
-  src: url("../font/proximanova-regular-webfont.woff2") format("woff2"), url("../font/proximanova-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'proxima_nova_rgbold';
-  src: url("../font/proximanova-bold-webfont.woff2") format("woff2"), url("../font/proximanova-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 @font-face {
   font-family: 'socialicoregular';
   src: url("../font/socialico-webfont.eot");
@@ -132,103 +115,81 @@ img {
   src: url("../font/socialico_plus-webfont.woff2") format("woff2"), url("../font/socialico_plus-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-/* line 57, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-columns-2 {
   -webkit-columns: 28px 2;
   -moz-columns: 28px 2;
   columns: 28px 2; }
 
-/* line 60, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-columns-3 {
   -webkit-columns: 28px 3;
   -moz-columns: 28px 3;
   columns: 28px 3; }
 
-/* line 63, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-columns-4 {
   -webkit-columns: 28px 4;
   -moz-columns: 28px 4;
   columns: 28px 4; }
 
-/* line 67, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-uppercase {
   text-transform: uppercase; }
 
-/* line 71, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-color {
   color: #36424C; }
 
-/* line 75, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .body-text-color {
-  color: #708EA7; }
+  color: #5E6469; }
 
-/* line 79, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .dark-text-color {
   color: #36424C; }
 
-/* line 83, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .light-text-color {
-  color: #bbbbbb; }
+  color: #8AA1AA; }
 
-/* line 87, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-success {
   color: #85C342; }
 
-/* line 91, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .text-warning {
   color: #f0ad4e; }
 
-/* line 95, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .link-color {
-  color: #00BDFF !important; }
+  color: #00CD90 !important; }
 
-/* line 99, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .footer-color {
   color: #172B3B; }
 
-/* line 106, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .flourish-font-name {
-  font-family: proxima_nova_rgregular, "Helvetica", serif; }
+  font-family: "Open Sans", sans-serif; }
 
-/* line 110, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .headline-font-name {
-  font-family: proxima_nova_rgregular, "Helvetica", serif; }
+  font-family: "Open Sans", sans-serif; }
 
-/* line 114, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .regular-font-name {
-  font-family: proxima_nova_rgregular, "Helvetica", serif; }
+  font-family: "Open Sans", sans-serif; }
 
-/* line 118, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .bold-font-name {
-  font-family: proxima_nova_rgbold, "Helvetica", serif !important; }
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700; }
 
-/* line 122, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .light-font-name {
-  font-family: proxima_novalight, "Helvetica", serif; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100; }
 
-/* line 127, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .social-font-name {
   font-family: "socialicoregular", "Helvetica", serif; }
 
-/* line 136, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .primary-text-color {
-  color: #00BDFF !important; }
-  /* line 138, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
+  color: #00CD90 !important; }
   .primary-text-color p {
-    color: #00BDFF !important; }
+    color: #00CD90 !important; }
 
-/* line 143, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .secondary-text-color {
-  color: #BBE900 !important; }
-  /* line 145, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
+  color: #003968 !important; }
   .secondary-text-color p {
-    color: #BBE900 !important; }
+    color: #003968 !important; }
 
-/* line 152, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .micro-text {
   font-size: 0.7rem; }
 
-/* line 156, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .quote {
   opacity: 0.51;
   font-size: 44px;
@@ -236,75 +197,76 @@ img {
   letter-spacing: 0;
   line-height: 34px; }
 
-/* line 164, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .quote-text {
   font-size: 24px;
   color: #36424C;
   letter-spacing: 0;
   line-height: 34px; }
 
-/* line 171, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .cite {
   font-size: 13px;
   letter-spacing: 0;
   line-height: 34px;
   font-style: normal; }
 
-/* line 183, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
-/* line 186, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   margin-bottom: 14px; }
 
-/* line 192, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 h1 {
-  font-size: 45px;
-  letter-spacing: 0; }
-
-/* line 196, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
-h2 {
-  font-size: 38px;
+  font-size: 40px;
   letter-spacing: 0;
-  line-height: 29px; }
+  font-weight: 700;
+  color: #003968;
+  line-height: 50px; }
 
-/* line 201, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
+h2 {
+  font-size: 32px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #003968;
+  line-height: 35px; }
+
 h3 {
   font-size: 34px;
   letter-spacing: 0; }
 
-/* line 205, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 h4 {
   font-size: 24px;
   letter-spacing: 0; }
 
-/* line 209, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
+h5 {
+  font-size: 19px;
+  letter-spacing: 1.6px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #D0DCE7; }
+
 h6 {
   font-size: 12px;
   letter-spacing: 0.86px; }
 
-/* line 215, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 p {
-  color: #708EA7;
-  line-height: 2.8rem;
+  color: #5E6469;
+  line-height: 3.8rem;
   margin-bottom: 14px; }
-  /* line 219, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   p.lead {
     line-height: 3rem; }
-  /* line 222, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   p .text-underline {
     padding-bottom: 4px;
-    border-bottom: 1px solid #708EA7; }
+    border-bottom: 1px solid #5E6469; }
+  p.small {
+    font-size: 1.5rem;
+    line-height: 2.3rem; }
 
-/* line 229, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .blockquote {
-  font-family: proxima_novalight, "Helvetica", serif;
+  font-family: "Open Sans", sans-serif;
   padding-left: 0;
   border: none !important;
   margin-bottom: 0; }
-  /* line 235, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .blockquote p:before {
     content: "\201c";
     left: -7px;
@@ -312,7 +274,6 @@ p {
     font-size: 43px;
     color: #999FA4;
     top: 16px; }
-  /* line 243, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .blockquote p:after {
     content: "\201d";
     margin-left: 7px;
@@ -321,47 +282,50 @@ p {
     top: 16px;
     color: #999FA4; }
   @media (max-width: 767px) {
-    /* line 229, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
     .blockquote {
       padding: 20px; }
-      /* line 256, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
       .blockquote p:before {
         left: 12px;
         top: 26px; }
-      /* line 260, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
       .blockquote p:after {
         margin-left: 0px; } }
-  /* line 267, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .blockquote .cite {
     font-size: 13px; }
 
-/* line 280, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
 .headline-accent {
-  font-family: proxima_nova_rgregular, "Helvetica", serif;
+  font-family: "Open Sans", sans-serif;
   color: #ebeced;
   letter-spacing: 0px;
   margin-bottom: -10px; }
-  /* line 285, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .headline-accent.headline-accent-lg {
     font-size: 80px; }
-  /* line 288, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .headline-accent.headline-accent-xl {
     font-size: 120px; }
-  /* line 294, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .headline-accent.muted-accent {
     color: #495356 !important; }
-  /* line 297, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_typography.scss */
   .headline-accent.muted-accent-white-bg {
     color: #EBEEEE; }
 
-/* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
+@media (max-width: 992px) {
+  p {
+    font-size: 20px;
+    line-height: 30px; } }
+@media (max-width: 767px) {
+  h1, h2, p {
+    text-align: center;
+    text-align: center; }
+
+  h1 {
+    font-size: 40px; }
+
+  p {
+    font-size: 18px;
+    line-height: 30px; } }
 .arrow-action-link {
   font-style: italic; }
-  /* line 3, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
   .arrow-action-link .underline {
     padding-bottom: 5px;
-    border-bottom: 1px solid #00BDFF; }
-  /* line 7, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
+    border-bottom: 1px solid #00CD90; }
   .arrow-action-link i {
     position: relative;
     top: 2px;
@@ -371,354 +335,298 @@ p {
     -ms-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s; }
-  /* line 13, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
   .arrow-action-link:hover {
-    color: #00BDFF;
+    color: #00CD90;
     text-decoration: none; }
-    /* line 16, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
     .arrow-action-link:hover i {
       padding-left: 4px; }
 
-/* line 23, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
 .btn {
-  border-radius: 100px;
-  font-family: proxima_nova_rgbold, "Helvetica", serif;
-  font-size: 16px; }
-  /* line 27, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px; }
   .btn.btn-primary {
-    background-color: #00BDFF;
-    border-color: #00BDFF;
+    background-color: #00CD90;
+    border-color: #00CD90;
     color: white !important;
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -ms-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s; }
-    /* line 32, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
     .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
       color: white !important;
-      background-color: #0097cc !important;
-      border-color: #0097cc !important;
+      background-color: #00a473 !important;
+      border-color: #00a473 !important;
       box-shadow: none; }
-  /* line 40, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
   .btn.btn-shadow {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.13);
     font-size: 16px;
     letter-spacing: 0;
     padding: 10px 20px 10px 20px; }
-  /* line 46, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
   .btn.btn-strech {
     padding: 10px 50px 10px 50px !important; }
-  /* line 49, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
-  .btn.btn-header {
-    padding: 8px 30px !important;
-    font-size: 16px;
-    position: relative;
-    top: -3px; }
 
-/* line 57, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
 li a, a {
-  color: #00BDFF; }
-  /* line 59, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_links_buttons.scss */
+  color: #00CD90; }
   li a:hover, a:hover {
     text-decoration: none;
-    color: #0097cc; }
+    color: #00a473; }
 
-/* line 2, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-auto {
   margin: 0 auto; }
 
-/* line 5, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin {
   margin: 28px !important; }
 
-/* line 8, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-top {
   margin-top: 28px !important; }
 
-/* line 11, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-right {
   margin-right: 28px !important; }
 
-/* line 14, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-bottom {
   margin-bottom: 28px !important; }
 
-/* line 17, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .margin-left {
   margin-left: 28px !important; }
 
-/* line 20, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-margin-top {
   margin-top: 56px !important; }
 
-/* line 23, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-margin-right {
   margin-right: 56px !important; }
 
-/* line 26, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-margin-bottom {
   margin-bottom: 56px !important; }
 
-/* line 29, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-margin-left {
   margin-left: 56px !important; }
 
-/* line 32, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-margin-top {
   margin-top: 84px !important; }
 
-/* line 35, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-margin-right {
   margin-right: 84px !important; }
 
-/* line 38, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-margin-bottom {
   margin-bottom: 84px !important; }
 
-/* line 41, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-margin-left {
   margin-left: 84px !important; }
 
-/* line 44, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-margin-top {
   margin-top: 14px !important; }
 
-/* line 47, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-margin-right {
   margin-right: 14px !important; }
 
-/* line 50, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-margin-bottom {
   margin-bottom: 14px !important; }
 
-/* line 53, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-margin-left {
   margin-left: 14px !important; }
 
-/* line 56, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-margin-top {
   margin-top: 7px !important; }
 
-/* line 59, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-margin-right {
   margin-right: 7px !important; }
 
-/* line 62, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-margin-bottom {
   margin-bottom: 7px !important; }
 
-/* line 65, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-margin-left {
   margin-left: 7px !important; }
 
-/* line 68, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-margin {
   margin: 0px !important; }
 
-/* line 71, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-margin-top {
   margin-top: 0px !important; }
 
-/* line 74, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-margin-right {
   margin-right: 0px !important; }
 
-/* line 77, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-margin-bottom {
   margin-bottom: 0px !important; }
 
-/* line 80, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-margin-left {
   margin-left: 0px !important; }
 
-/* line 83, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .large-margin-top {
   margin-top: 84px !important; }
 
-/* line 88, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .padded {
   padding: 28px !important; }
 
-/* line 91, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .padding-top {
   padding-top: 28px !important; }
 
-/* line 94, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .padding-right {
   padding-right: 28px !important; }
 
-/* line 97, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .padding-bottom {
   padding-bottom: 28px !important; }
 
-/* line 100, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .padding-left {
   padding-left: 28px !important; }
 
-/* line 103, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-padded {
   padding: 56px !important; }
 
-/* line 106, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-padding-top {
   padding-top: 56px !important; }
 
-/* line 109, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-padding-right {
   padding-right: 56px !important; }
 
-/* line 112, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-padding-bottom {
   padding-bottom: 56px !important; }
 
-/* line 115, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .double-padding-left {
   padding-left: 56px !important; }
 
-/* line 118, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-padding-top {
   padding-top: 84px !important; }
 
-/* line 121, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-padding-right {
   padding-right: 84px !important; }
 
-/* line 124, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-padding-bottom {
   padding-bottom: 84px !important; }
 
-/* line 127, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .triple-padding-left {
   padding-left: 84px !important; }
 
-/* line 130, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-padding {
   padding: 0px !important; }
 
-/* line 133, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-padding-top {
   padding-top: 0px !important; }
 
-/* line 136, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-padding-right {
   padding-right: 0px !important; }
 
-/* line 139, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-padding-bottom {
   padding-bottom: 0px !important; }
 
-/* line 142, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .no-padding-left {
   padding-left: 0px !important; }
 
-/* line 145, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-padding {
   padding: 14px !important; }
 
-/* line 148, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-padding-top {
   padding-top: 14px !important; }
 
-/* line 151, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-padding-right {
   padding-right: 14px !important; }
 
-/* line 154, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-padding-bottom {
   padding-bottom: 14px !important; }
 
-/* line 157, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .half-padding-left {
   padding-left: 14px !important; }
 
-/* line 160, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-padding {
   padding: 7px !important; }
 
-/* line 163, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-padding-top {
   padding-top: 7px !important; }
 
-/* line 166, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-padding-right {
   padding-right: 7px !important; }
 
-/* line 169, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-padding-bottom {
   padding-bottom: 7px !important; }
 
-/* line 172, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_margin_padding_helpers.scss */
 .quarter-padding-left {
   padding-left: 7px !important; }
 
-/* line 3, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_sections.scss */
 section {
-  padding: 56px 0; }
-  /* line 5, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_sections.scss */
+  padding: 84px 0; }
   section.page-header-section {
     background-size: cover;
     background-position: center center;
     padding: 112px 0; }
-    /* line 9, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_sections.scss */
     section.page-header-section h1 {
       text-shadow: 0 1px 13px rgba(0, 0, 0, 0.3); }
-  /* line 16, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_sections.scss */
+  section.inverse-section a {
+    color: white;
+    text-decoration: underline; }
+  section.gradient-section {
+    background-color: #09C4A0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #09C4A0), color-stop(100%, #2EB0D7));
+    background-image: -webkit-linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%);
+    background-image: -moz-linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%);
+    background-image: -ms-linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%);
+    background-image: -o-linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%);
+    background-image: linear-gradient(-45deg, #09C4A0 0%, #2EB0D7 100%); }
   section.bg-cover {
     background: cenrer no-repeat 100%;
     background-size: cover;
     background-position: center center; }
+  section.off-white-bg {
+    background: #F8FCFF; }
+  section.bordered-section {
+    border-bottom: 1px solid #ECF0F5; }
+  @media (max-width: 767px) {
+    section {
+      padding: 28px 0; } }
 
-/* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
+.app-dd {
+  border: none;
+  min-width: 169px; }
+  .app-dd li a {
+    font-weight: 600;
+    margin: 0 !important;
+    padding: 8px 0px 8px 20px !important; }
+    .app-dd li a:hover {
+      background: transparent;
+      color: #001d34 !important; }
+
 .form-control {
   border: 1px solid #DEE8F1 !important;
   box-shadow: none;
   border-radius: 2px; }
-  /* line 5, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
   .form-control:focus {
     outline: none;
-    border-color: #00BDFF !important;
+    border-color: #00CD90 !important;
     box-shadow: none !important; }
 
-/* line 13, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #BAC3CA !important; }
 
-/* line 16, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #BAC3CA !important; }
 
-/* line 19, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #BAC3CA !important; }
 
-/* line 22, /Users/alauderdale/Desktop/everleads site/source/stylesheets/partials/_forms.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #BAC3CA !important; }
 
-/* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .global-nav {
   background-color: white;
   padding: 8px 0;
   text-align: right;
-  border-bottom: 1px solid #E5E9ED;
+  border-bottom: none;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -ms-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s; }
   @media (max-width: 767px) {
-    /* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .global-nav {
       background: white; } }
-  /* line 11, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .global-nav a.navbar-brand {
     position: relative; }
-    /* line 15, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .global-nav a.navbar-brand img {
       transform-origin: 51px 16px;
       transition-delay: 0s;
@@ -728,102 +636,90 @@ section {
       x: 0px;
       y: 0px; }
     @media (max-width: 767px) {
-      /* line 11, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
       .global-nav a.navbar-brand {
         top: 0;
         display: inline;
         text-align: center !important;
         float: none;
         margin: 0 auto; }
-        /* line 31, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
         .global-nav a.navbar-brand img {
           width: 164px;
           position: relative;
           top: -5px;
           left: 20px; } }
-  /* line 41, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .global-nav .desktop-nav {
     display: inline-flex; }
-  /* line 44, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .global-nav .navbar-form {
     padding: 19px 0;
     margin: 0; }
-    /* line 47, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .global-nav .navbar-form .btn {
       background: none;
       border: 1px solid rgba(255, 255, 255, 0.5);
       padding: 10px 20px; }
-      /* line 51, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
       .global-nav .navbar-form .btn:hover {
         border-color: white; }
-  /* line 57, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .global-nav .navbar-header {
     display: flex; }
-  /* line 60, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .global-nav ul.navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
     text-align: center; }
-    /* line 65, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .global-nav ul.navbar-nav li {
-      font-size: 16px; }
-      /* line 67, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
+      font-size: 14px;
+      font-weight: 700; }
       .global-nav ul.navbar-nav li a {
-        padding-right: 40px;
+        padding-right: 20px;
         padding-top: 6px;
         padding-bottom: 6px;
         margin-top: 21px;
-        color: #737E88;
+        color: #003968;
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
         -ms-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
         transition-duration: 0.2s; }
+        .global-nav ul.navbar-nav li a:hover {
+          color: #4d7495; }
+  .global-nav .btn.btn-header {
+    padding: 8px 20px !important;
+    font-size: 14px;
+    position: relative;
+    font-weight: 700;
+    top: -3px; }
 
-/* line 78, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .btn-default {
   border: none; }
-  /* line 80, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .btn-default:hover, .btn-default:active, .btn-default:focus {
     border: none; }
 
-/* line 84, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .menu-button {
   padding-right: 20px;
   margin-top: 20px; }
 
-/* line 89, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .mobile-nav {
   border: none;
   max-height: 100%;
   text-align: center; }
-  /* line 93, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .mobile-nav ul {
     margin-bottom: 30px;
     width: 100%; }
-    /* line 96, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .mobile-nav ul li {
       font-size: 1.4rem;
       width: 100%; }
-      /* line 100, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
       .mobile-nav ul li.open a.dropdown-toggle {
         display: none; }
-      /* line 104, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
       .mobile-nav ul li a {
         width: 100%;
         display: block;
         padding: 8px 0px !important;
-        color: #737E88 !important;
+        color: #003968 !important;
         width: 100%; }
-        /* line 110, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
         .mobile-nav ul li a.link-color {
-          color: #00BDFF !important; }
-        /* line 113, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
+          color: #00CD90 !important; }
         .mobile-nav ul li a.bold-link {
           color: #172B3B !important; }
 
-/* line 135, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .tcon {
   appearance: none;
   border: none;
@@ -839,67 +735,53 @@ section {
   outline: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
-  /* line 151, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon > * {
     display: block; }
-  /* line 155, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon:hover, .tcon:focus {
     outline: none; }
-  /* line 159, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon::-moz-focus-inner {
     border: 0; }
 
-/* line 173, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .tcon-menu__lines {
   display: inline-block;
   height: 1.71429px;
   width: 24px;
   border-radius: 1.71429px;
   transition: 0.3s;
-  background: #737E88;
+  background: #003968;
   position: relative; }
-  /* line 177, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-menu__lines::before, .tcon-menu__lines::after {
     display: inline-block;
     height: 1.71429px;
     width: 24px;
     border-radius: 1.71429px;
     transition: 0.3s;
-    background: #737E88;
+    background: #003968;
     content: '';
     position: absolute;
     left: 0;
     transform-origin: 1.71429px center;
     width: 100%; }
-  /* line 187, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-menu__lines::before {
     top: 6px; }
-  /* line 191, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-menu__lines::after {
     top: -6px; }
-  /* line 195, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-transform .tcon-menu__lines {
     transform: scale3d(0.8, 0.8, 0.8); }
 
-/* line 199, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .tcon-menu--xcross {
   width: auto; }
-  /* line 203, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-menu--xcross.tcon-transform .tcon-menu__lines {
     background: transparent; }
-    /* line 206, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .tcon-menu--xcross.tcon-transform .tcon-menu__lines::before, .tcon-menu--xcross.tcon-transform .tcon-menu__lines::after {
       transform-origin: 50% 50%;
       top: 0;
       width: 24px; }
-    /* line 213, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .tcon-menu--xcross.tcon-transform .tcon-menu__lines::before {
       transform: rotate3d(0, 0, 1, 45deg); }
-    /* line 217, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
     .tcon-menu--xcross.tcon-transform .tcon-menu__lines::after {
       transform: rotate3d(0, 0, 1, -45deg); }
 
-/* line 224, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
 .tcon-visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -909,7 +791,6 @@ section {
   padding: 0;
   position: absolute;
   width: 1px; }
-  /* line 234, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_header.scss */
   .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
     clip: auto;
     height: auto;
@@ -918,307 +799,100 @@ section {
     position: static;
     width: auto; }
 
-/* line 2, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-section.home-footer-bg {
-  background-image: url("../images/home-footer-bg.png");
-  max-width: 100%;
-  height: auto; }
-
-/* line 10, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-footer.primary-footer {
-  background-color: #172B3B; }
-  /* line 13, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-  footer.primary-footer section {
-    padding: 30px 0; }
-  /* line 16, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-  footer.primary-footer ul.social-list {
-    list-style: none;
-    display: inline-block;
-    margin-bottom: 0;
-    float: right; }
-    /* line 21, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-    footer.primary-footer ul.social-list li {
-      float: left;
-      font-size: 43px;
-      line-height: 1em;
-      padding-left: 10px; }
-      /* line 26, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-      footer.primary-footer ul.social-list li a {
-        -webkit-transition-duration: 0.1s;
-        -moz-transition-duration: 0.1s;
-        -ms-transition-duration: 0.1s;
-        -o-transition-duration: 0.1s;
-        transition-duration: 0.1s;
-        color: rgba(255, 255, 255, 0.8);
-        border: none; }
-        /* line 30, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-        footer.primary-footer ul.social-list li a:hover, footer.primary-footer ul.social-list li a:focus {
-          color: white;
-          text-decoration: none; }
-    @media (max-width: 767px) {
-      /* line 16, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-      footer.primary-footer ul.social-list {
-        float: none;
-        text-align: center; }
-        /* line 39, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-        footer.primary-footer ul.social-list li {
-          text-align: center;
-          display: inline; } }
-  /* line 45, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-  footer.primary-footer ul.link-list {
-    list-style: none;
-    display: inline;
-    float: none;
-    text-align: center;
-    margin-bottom: 0; }
-    /* line 51, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-    footer.primary-footer ul.link-list li {
-      float: left;
-      font-size: 13px;
-      line-height: 3.6em; }
-      /* line 55, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-      footer.primary-footer ul.link-list li a {
-        color: #00BDFF;
-        padding-left: 10px;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -ms-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s; }
-        /* line 59, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-        footer.primary-footer ul.link-list li a:hover {
-          color: #80deff;
-          text-decoration: none; }
-    @media (max-width: 767px) {
-      /* line 45, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-      footer.primary-footer ul.link-list {
-        float: none;
-        text-align: center; }
-        /* line 69, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-        footer.primary-footer ul.link-list li {
-          float: none;
-          text-align: center;
-          display: inline; } }
-  @media (max-width: 767px) {
-    /* line 10, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-    footer.primary-footer {
-      text-align: center; }
-      /* line 79, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_footer.scss */
-      footer.primary-footer p.footer-line {
-        font-size: .8em; } }
-
-/* line 1, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.home-hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  padding: 95.2px 0;
-  position: relative;
-  overflow: hidden;
-  background-color: #002633; }
-
-/* line 11, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.home-bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  background: #00BDFF;
-  position: absolute;
-  top: 0;
-  bottom: 0; }
-
-/* line 23, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.partners-container {
-  position: relative;
-  z-index: 200;
-  padding: 28px 0;
-  background: #FBFCFC;
-  display: flex;
-  width: 100%;
-  border-bottom: 1px solid #E5E9ED; }
-
-/* line 33, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-ul.pricing-link {
+footer.primary-footer section {
+  padding: 30px 0; }
+footer.primary-footer ul.social-list {
   list-style: none;
-  display: inline-block; }
-  /* line 36, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-  ul.pricing-link li {
-    float: left; }
-    /* line 38, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-    ul.pricing-link li.underline {
-      text-decoration: underline; }
+  display: inline-block;
+  margin-bottom: 0;
+  float: right; }
+  footer.primary-footer ul.social-list li {
+    float: left;
+    font-size: 43px;
+    line-height: 1em;
+    padding-left: 10px; }
+    footer.primary-footer ul.social-list li a {
+      -webkit-transition-duration: 0.1s;
+      -moz-transition-duration: 0.1s;
+      -ms-transition-duration: 0.1s;
+      -o-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      color: #00CD90;
+      border: none; }
+      footer.primary-footer ul.social-list li a:hover, footer.primary-footer ul.social-list li a:focus {
+        color: white;
+        text-decoration: none; }
+  @media (max-width: 767px) {
+    footer.primary-footer ul.social-list {
+      float: none;
+      text-align: center; }
+      footer.primary-footer ul.social-list li {
+        text-align: center;
+        display: inline; } }
+footer.primary-footer ul.link-list {
+  list-style: none;
+  display: inline;
+  float: none;
+  text-align: center;
+  margin-bottom: 0; }
+  footer.primary-footer ul.link-list li {
+    float: left;
+    font-size: 13px;
+    line-height: 3.6em;
+    color: #8AA1AA !important; }
+    footer.primary-footer ul.link-list li a {
+      color: #617177;
+      padding-left: 10px;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -ms-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+      footer.primary-footer ul.link-list li a:hover {
+        color: #80e6c8;
+        text-decoration: none; }
+  @media (max-width: 767px) {
+    footer.primary-footer ul.link-list {
+      float: none !important;
+      text-align: center; }
+      footer.primary-footer ul.link-list li {
+        float: none;
+        text-align: center;
+        display: inline; } }
+@media (max-width: 767px) {
+  footer.primary-footer {
+    text-align: center; }
+    footer.primary-footer p.footer-line {
+      font-size: .8em; } }
 
-/* line 44, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.responsive {
-  width: 100% !important;
-  height: auto !important; }
-
-/* line 49, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.partners-band {
-  background: #FBFCFC;
-  box-shadow: 0 1px 0 0 #E5E9ED;
-  background-image: url("../images/partners.png"); }
-
-/* line 55, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.light-blue-band {
-  background-color: #E6FAFF; }
-
-/* line 59, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.float-left {
-  float: left;
-  padding-right: 10px; }
-
-/* line 64, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.call-out-card {
-  box-shadow: 0 20px 34px 0 rgba(0, 0, 0, 0.09);
-  border-radius: 15px; }
-
-/* line 69, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_home.scss */
-.pink-num-call-out {
-  font-size: 86px;
-  color: #FF0086;
-  letter-spacing: 0; }
-
-/* line 3, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-section.features .feature {
-  padding: 28px 0; }
-  /* line 5, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-  section.features .feature .features-image {
-    float: right !important; }
-    /* line 7, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-    section.features .feature .features-image img {
-      margin-top: 50px !important; }
-    @media (max-width: 992px) {
-      /* line 5, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-      section.features .feature .features-image {
-        float: none !important; }
-        /* line 12, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-        section.features .feature .features-image img {
-          margin: 0 !important; } }
-  /* line 18, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-  section.features .feature .features-text {
-    float: left !important; }
-    /* line 20, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-    section.features .feature .features-text .inner {
-      margin-top: 44px;
-      padding: 28px; }
-      @media (max-width: 992px) {
-        /* line 20, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-        section.features .feature .features-text .inner {
-          margin-top: 28px;
-          padding-top: 0; } }
-  /* line 31, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-  section.features .feature:nth-child(even) .features-image {
-    float: left !important; }
-  /* line 34, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_features.scss */
-  section.features .feature:nth-child(even) .features-text {
-    float: right !important; }
-
-/* line 3, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-img.contact-logo-mobile {
-  margin-bottom: 28px !important; }
-
-/* line 8, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-.feature-panel {
-  padding: 42px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 400px;
-  min-height: 650px;
-  height: 100%;
-  overflow: hidden;
-  background: #172B3B;
-  background-size: cover; }
-  /* line 29, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .feature-panel .contact-logo {
-    margin-bottom: 39px; }
-  /* line 32, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .feature-panel h5 {
-    margin-bottom: 34px; }
-  /* line 35, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .feature-panel p {
-    line-height: 1.5em; }
-    /* line 37, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-    .feature-panel p small {
-      color: #A9C2D6 !important; }
-  /* line 41, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .feature-panel .contact-quote {
-    position: absolute;
-    bottom: 3%;
-    color: white; }
-    /* line 45, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-    .feature-panel .contact-quote p {
-      padding-right: 42px; }
-      /* line 47, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-      .feature-panel .contact-quote p.quote-text {
-        font-size: 18px;
-        font-family: proxima_nova_rgregular, "Helvetica", serif;
-        line-height: 23px;
-        font-style: italic; }
-    /* line 54, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-    .feature-panel .contact-quote .cite {
-      font-size: 10px; }
-
-/* line 60, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-.main-panel {
-  height: 100%;
-  overflow: auto;
-  margin-left: 400px;
-  position: relative; }
-  /* line 65, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .main-panel h2 {
-    line-height: 1.1em; }
+.trust-icon-wrap {
+  padding: 28px; }
   @media (max-width: 992px) {
-    /* line 60, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-    .main-panel {
-      margin-left: 0; }
-      /* line 71, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-      .main-panel section {
-        padding: 28px 0; }
-      /* line 74, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-      .main-panel h2 {
-        font-size: 30px; } }
-  /* line 78, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_contact.scss */
-  .main-panel .panel-inner {
-    display: table;
-    width: 100%;
-    height: 100%; }
+    .trust-icon-wrap {
+      padding: 0; } }
+  @media (max-width: 767px) {
+    .trust-icon-wrap {
+      padding: 28px 0; } }
 
-/* line 2, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-.company-text p {
-  padding-right: 28px;
-  margin-bottom: 28px; }
-  @media (max-width: 992px) {
-    /* line 2, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-    .company-text p {
-      padding-right: 0; } }
+.trust-icon {
+  background: #FFFFFF;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .trust-icon svg {
+    margin: 0 auto;
+    display: inline-block; }
 
-/* line 13, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-.company-images {
-  position: relative;
-  left: 60px;
-  top: 80px;
-  height: 300px; }
-  /* line 19, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-  .company-images .inner img {
-    position: absolute; }
-    /* line 21, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-    .company-images .inner img.img-one {
-      top: -50px;
-      left: -80px; }
-    /* line 25, /Users/alauderdale/Desktop/everleads site/source/stylesheets/elements/_company.scss */
-    .company-images .inner img.img-three {
-      top: 100px;
-      left: -50px; }
+.secutiry-label {
+  font-size: 21px; }
+  @media (max-width: 1200px) {
+    .secutiry-label {
+      font-size: 22px;
+      line-height: 28px; } }
