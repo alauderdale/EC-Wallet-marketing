@@ -1,14 +1,21 @@
 .app-dd{
 	border:none;
 	min-width:169px;
+	@include breakpoint(sm) {
+		text-align:center;
+		right:0;
+	}
 	li{
 		a{
 			font-weight:600;
 			margin:0!important;
-			padding:8px 0px 8px 20px!important;
+			padding:8px 0px 8px 20px;
 			&:hover{
 				background:transparent;
 				color:shade($header-text-color,50%)!important;
+			}
+			@include breakpoint(sm) {
+				padding:20px 0px 20px 0px!important;
 			}
 
 		}

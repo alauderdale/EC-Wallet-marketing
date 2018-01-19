@@ -13,3 +13,64 @@
               Powered by EverCheck
               %a{:href=>"evercheck.com", :style=>"padding:0px;"}
                 evercheck.com
+
+
+/ %ul.dropdown-menu.app-dd#employee
+/   %li.text-center
+/     %a{:href=>"#"}
+/       %img.max-width.margin-auto{:src=>"../images/app_store.png"}
+/   %li.text-center
+/     %a{:href=>"#"}
+/       %img.max-width.margin-auto{:src=>"../images/google_play.png"}
+
+
+
+/ Applicant Modal
+#applicantModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.no-border-bottom
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        .text-center
+          %h4.margin-bottom
+            Create your account to get started
+          %a.btn.btn-primary{:href=>"#"}
+            Sign up now
+          .margin-top
+            %h6
+              Existing applicant?
+              %a{:href=>"#"}
+                Sign in
+              to your account
+      .modal-footer.no-border-top
+
+
+
+
+/ Employee Modal
+#employeeModal.modal{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header.no-border-bottom
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        .text-center
+          %h4.margin-bottom
+            Download the app
+          %ul.list-unstyled
+            %li.text-center.quarter-margin-bottom
+              %a{:href=>"#"}
+                %img.max-width.margin-auto{:src=>"../images/app_store.png"}
+            %li.text-center
+              %a{:href=>"#"}
+                %img.max-width.margin-auto{:src=>"../images/google_play.png"}
+          .margin-top
+            %h6
+              Or 
+              %a{:href=>"#"}
+                Log in
+              through the web application
+      .modal-footer.no-border-top

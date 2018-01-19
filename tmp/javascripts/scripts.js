@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    //replace
+
+
+    // $( ".employee-select" ).click(function() {
+    //     $( ".select-dd-inner" ).replaceWith( $( "#employee" ) );
+    // });
+
+    
+
 
 
     window.sr = ScrollReveal({ 

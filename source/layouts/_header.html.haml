@@ -21,22 +21,11 @@
 							%a{:href=>"#"}
 								Sign in
 						%li
-							.btn-group
-								%a.btn.btn-primary.btn-header.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
-									Get wallet
-								%ul.dropdown-menu.app-dd
-									%li
-										%a{:href=>"#"}
-											I'm an employee
-									%li
-										%a{:href=>"#"}
-											I'm an applicant
-									/ %li.text-center
-									/ 	%a{:href=>"#"}
-									/ 		%img.max-width.margin-auto{:src=>"../images/app_store.png"}
-									/ %li.text-center
-									/ 	%a{:href=>"#"}
-									/ 		%img.max-width.margin-auto{:src=>"../images/google_play.png"}
+							%a.btn.btn-primary.btn-header.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
+								Get wallet
+							=partial("shared/app-dropdown")
+							
+
 							
 
 
@@ -49,9 +38,7 @@
 				%li
 					%a{:href=>"#"}
 						Sign in
-				%li.text-center
-					%a{:href=>"#"}
-						%img.max-width.margin-auto{:src=>"../images/app_store.png"}
-				%li.text-center
-					%a{:href=>"#"}
-						%img.max-width.margin-auto{:src=>"../images/google_play.png"}
+				%li
+					%a.btn.btn-primary.btn-header.dropdown-toggle{:href => "#", "data-toggle"=>"dropdown"}
+						Get wallet
+					=partial("shared/app-dropdown")

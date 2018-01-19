@@ -46,29 +46,22 @@ Sign in
 </a>
 </li>
 <li>
-<div class='btn-group'>
 <a class='btn btn-primary btn-header dropdown-toggle' data-toggle='dropdown' href='#'>
 Get wallet
 </a>
-<ul class='dropdown-menu app-dd'>
-<li>
-<a href='#'>
+<ul class='dropdown-menu app-dd select-dd-inner'>
+<li class='employee-select'>
+<a data-target='#employeeModal' data-toggle='modal' href='#'>
 I'm an employee
 </a>
 </li>
-<li>
-<a href='#'>
+<li class='applicant-select'>
+<a data-target='#applicantModal' data-toggle='modal' href='#'>
 I'm an applicant
 </a>
 </li>
-<!-- %li.text-center -->
-<!-- %a{:href=>"#"} -->
-<!-- %img.max-width.margin-auto{:src=>"../images/app_store.png"} -->
-<!-- %li.text-center -->
-<!-- %a{:href=>"#"} -->
-<!-- %img.max-width.margin-auto{:src=>"../images/google_play.png"} -->
 </ul>
-</div>
+
 </li>
 </ul>
 </div>
@@ -88,15 +81,23 @@ Help
 Sign in
 </a>
 </li>
-<li class='text-center'>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/app_store.png'>
+<li>
+<a class='btn btn-primary btn-header dropdown-toggle' data-toggle='dropdown' href='#'>
+Get wallet
+</a>
+<ul class='dropdown-menu app-dd select-dd-inner'>
+<li class='employee-select'>
+<a data-target='#employeeModal' data-toggle='modal' href='#'>
+I'm an employee
 </a>
 </li>
-<li class='text-center'>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/google_play.png'>
+<li class='applicant-select'>
+<a data-target='#applicantModal' data-toggle='modal' href='#'>
+I'm an applicant
 </a>
+</li>
+</ul>
+
 </li>
 </ul>
 </div>
@@ -130,12 +131,24 @@ Scan, upload, and store your licenses digitally. Share with employers automatica
 </div>
 <div class='step-4'>
 <div class='text-center-sm'>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/app_store.png'>
+<div class='dropdown'>
+<button class='btn btn-primary dropdown-toggle btn-lg' data-toggle='dropdown' type='button'>
+Get wallet
+</button>
+<ul class='dropdown-menu app-dd select-dd-inner'>
+<li class='employee-select'>
+<a data-target='#employeeModal' data-toggle='modal' href='#'>
+I'm an employee
 </a>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/google_play.png'>
+</li>
+<li class='applicant-select'>
+<a data-target='#applicantModal' data-toggle='modal' href='#'>
+I'm an applicant
 </a>
+</li>
+</ul>
+
+</div>
 </div>
 </div>
 </div>
@@ -468,6 +481,86 @@ evercheck.com
 </div>
 </section>
 </footer>
+<!-- %ul.dropdown-menu.app-dd#employee -->
+<!-- %li.text-center -->
+<!-- %a{:href=>"#"} -->
+<!-- %img.max-width.margin-auto{:src=>"../images/app_store.png"} -->
+<!-- %li.text-center -->
+<!-- %a{:href=>"#"} -->
+<!-- %img.max-width.margin-auto{:src=>"../images/google_play.png"} -->
+<!-- Applicant Modal -->
+<div aria-labelledby='myModalLabel' class='modal' id='applicantModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='text-center'>
+<h4 class='margin-bottom'>
+Create your account to get started
+</h4>
+<a class='btn btn-primary' href='#'>
+Sign up now
+</a>
+<div class='margin-top'>
+<h6>
+Existing applicant?
+<a href='#'>
+Sign in
+</a>
+to your account
+</h6>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
+<!-- Employee Modal -->
+<div aria-labelledby='myModalLabel' class='modal' id='employeeModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='text-center'>
+<h4 class='margin-bottom'>
+Download the app
+</h4>
+<ul class='list-unstyled'>
+<li class='text-center quarter-margin-bottom'>
+<a href='#'>
+<img class='max-width margin-auto' src='../images/app_store.png'>
+</a>
+</li>
+<li class='text-center'>
+<a href='#'>
+<img class='max-width margin-auto' src='../images/google_play.png'>
+</a>
+</li>
+</ul>
+<div class='margin-top'>
+<h6>
+Or
+<a href='#'>
+Log in
+</a>
+through the web application
+</h6>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
 
 <script src="javascripts/lib/menu_button.js"></script>
 <script>

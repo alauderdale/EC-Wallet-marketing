@@ -20,10 +20,10 @@
 							 
 					.step-4
 						.text-center-sm
-							%a{:href=>"#"}
-								%img.max-width.margin-auto{:src=>"../images/app_store.png"}
-							%a{:href=>"#"}
-								%img.max-width.margin-auto{:src=>"../images/google_play.png"}
+							.dropdown
+								%button.btn.btn-primary.dropdown-toggle.btn-lg{:type => "button", "data-toggle"=>"dropdown"}
+									Get wallet
+								=partial("shared/app-dropdown")
 					
 			.col-sm-6
 				.step-5

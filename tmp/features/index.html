@@ -46,29 +46,22 @@ Sign in
 </a>
 </li>
 <li>
-<div class='btn-group'>
 <a class='btn btn-primary btn-header dropdown-toggle' data-toggle='dropdown' href='#'>
 Get wallet
 </a>
-<ul class='dropdown-menu app-dd'>
-<li>
-<a href='#'>
+<ul class='dropdown-menu app-dd select-dd-inner'>
+<li class='employee-select'>
+<a data-target='#employeeModal' data-toggle='modal' href='#'>
 I'm an employee
 </a>
 </li>
-<li>
-<a href='#'>
+<li class='applicant-select'>
+<a data-target='#applicantModal' data-toggle='modal' href='#'>
 I'm an applicant
 </a>
 </li>
-<!-- %li.text-center -->
-<!-- %a{:href=>"#"} -->
-<!-- %img.max-width.margin-auto{:src=>"../images/app_store.png"} -->
-<!-- %li.text-center -->
-<!-- %a{:href=>"#"} -->
-<!-- %img.max-width.margin-auto{:src=>"../images/google_play.png"} -->
 </ul>
-</div>
+
 </li>
 </ul>
 </div>
@@ -88,15 +81,23 @@ Help
 Sign in
 </a>
 </li>
-<li class='text-center'>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/app_store.png'>
+<li>
+<a class='btn btn-primary btn-header dropdown-toggle' data-toggle='dropdown' href='#'>
+Get wallet
+</a>
+<ul class='dropdown-menu app-dd select-dd-inner'>
+<li class='employee-select'>
+<a data-target='#employeeModal' data-toggle='modal' href='#'>
+I'm an employee
 </a>
 </li>
-<li class='text-center'>
-<a href='#'>
-<img class='max-width margin-auto' src='../images/google_play.png'>
+<li class='applicant-select'>
+<a data-target='#applicantModal' data-toggle='modal' href='#'>
+I'm an applicant
 </a>
+</li>
+</ul>
+
 </li>
 </ul>
 </div>
@@ -140,7 +141,7 @@ Donec nulla lorem, auctor at neque sed, feugiat gravida sapien.
 Easy-to-use platform
 </h3>
 <p>
-Fuga ex tempore debitis architecto voluptas fuga qui. Quisquam est nisi molestiae reprehenderit nisi cum exercitationem. Porro sit cum rerum dolorem est ad autem
+Et animi suscipit provident sit fuga nesciunt eos. Nisi assumenda consequuntur nostrum voluptatem ut rerum praesentium expedita. Itaque assumenda eius non ut similique
 </p>
 </div>
 </div>
@@ -157,7 +158,7 @@ Fuga ex tempore debitis architecto voluptas fuga qui. Quisquam est nisi molestia
 24 / 7 access
 </h3>
 <p>
-Cumque alias veritatis optio ipsum et enim animi ut odit sunt. Neque asperiores aut ratione. Aliquid laudantium sint architecto perferendis commodi quis assumenda vitae ullam sapiente odio aut velit vitae
+Et sed ea est quia doloribus qui suscipit officiis nihil consequatur. Et placeat eum repellat. Vel culpa molestiae nemo officia pariatur expedita ut
 </p>
 </div>
 </div>
@@ -174,7 +175,7 @@ Cumque alias veritatis optio ipsum et enim animi ut odit sunt. Neque asperiores 
 Real time data
 </h3>
 <p>
-Aut odit doloremque id ab laudantium repellat voluptatem atque illum nemo eos asperiores repellat. Eius eos exercitationem adipisci voluptates. Omnis earum autem eligendi quas qui in atque aspernatur
+Beatae quo cum molestias est qui aspernatur ipsum minus est in at rem consequatur. Est fugit consectetur quia iure illum est laboriosam velit tempora vel. Quia qui nobis nihil similique est quis qui aut maxime et
 </p>
 </div>
 </div>
@@ -191,7 +192,7 @@ Aut odit doloremque id ab laudantium repellat voluptatem atque illum nemo eos as
 Unlimited downloads
 </h3>
 <p>
-Doloremque aut itaque molestiae et accusamus aliquid natus id ut iste voluptates. Et magni voluptatem suscipit. Facere iusto ducimus aut accusantium dolores debitis aliquid iusto a itaque
+Ipsum quod commodi unde consequatur id suscipit aut. Ut fuga ipsum asperiores aspernatur consequatur esse error sequi enim qui atque nesciunt. Assumenda ut dignissimos repudiandae
 </p>
 </div>
 </div>
@@ -208,7 +209,7 @@ Doloremque aut itaque molestiae et accusamus aliquid natus id ut iste voluptates
 Custom reports
 </h3>
 <p>
-Velit libero dignissimos voluptas optio. Omnis dolor hic est consectetur nesciunt voluptas inventore laboriosam ut. Ut aliquam earum tempore accusamus minima est voluptatum velit
+Delectus minus beatae itaque perferendis dolorem voluptas eligendi dignissimos aliquid sequi architecto possimus ut. Qui assumenda eum dolor. Magni molestiae totam aut assumenda
 </p>
 </div>
 </div>
@@ -266,6 +267,86 @@ evercheck.com
 </div>
 </section>
 </footer>
+<!-- %ul.dropdown-menu.app-dd#employee -->
+<!-- %li.text-center -->
+<!-- %a{:href=>"#"} -->
+<!-- %img.max-width.margin-auto{:src=>"../images/app_store.png"} -->
+<!-- %li.text-center -->
+<!-- %a{:href=>"#"} -->
+<!-- %img.max-width.margin-auto{:src=>"../images/google_play.png"} -->
+<!-- Applicant Modal -->
+<div aria-labelledby='myModalLabel' class='modal' id='applicantModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='text-center'>
+<h4 class='margin-bottom'>
+Create your account to get started
+</h4>
+<a class='btn btn-primary' href='#'>
+Sign up now
+</a>
+<div class='margin-top'>
+<h6>
+Existing applicant?
+<a href='#'>
+Sign in
+</a>
+to your account
+</h6>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
+<!-- Employee Modal -->
+<div aria-labelledby='myModalLabel' class='modal' id='employeeModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header no-border-bottom'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>×</span>
+</button>
+</div>
+<div class='modal-body'>
+<div class='text-center'>
+<h4 class='margin-bottom'>
+Download the app
+</h4>
+<ul class='list-unstyled'>
+<li class='text-center quarter-margin-bottom'>
+<a href='#'>
+<img class='max-width margin-auto' src='../images/app_store.png'>
+</a>
+</li>
+<li class='text-center'>
+<a href='#'>
+<img class='max-width margin-auto' src='../images/google_play.png'>
+</a>
+</li>
+</ul>
+<div class='margin-top'>
+<h6>
+Or
+<a href='#'>
+Log in
+</a>
+through the web application
+</h6>
+</div>
+</div>
+</div>
+<div class='modal-footer no-border-top'></div>
+</div>
+</div>
+</div>
 
 <script src="../javascripts/lib/menu_button.js"></script>
 <script>
